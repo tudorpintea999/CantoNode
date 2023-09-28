@@ -1,9 +1,9 @@
 "[Unit]
-Description=Canto Node
+Description=Canto Node Pintea Tudor
 After=network.target
 [Service]
 Type=simple
-User=root
+User=pintea
 WorkingDirectory=/root/
 ExecStart=/root/go/bin/cantod start --trace --log_level info --json-rpc.api eth,txpool,personal,net,debug,web3 --api.enable
 Restart=on-failure
